@@ -12,8 +12,8 @@ import numpy as np
 
 def create_data():
     conf = Config(standard_key_list=FISData.standard_key_list, config_dict=None)
-    config = utils.load_json(file_path=CONFIG_PATH + '/testFisAttackDataConfig.json')
-    config['FILE_PATH'] = DATASET1_PATH + '/Attack.csv'
+    config = utils.load_json(file_path=CONFIG_PATH + '/testFisTaskDataConfig.json')
+    config['FILE_PATH'] = DATASET1_PATH + '/Task.csv'
     conf.load_config(path=None, json_dict=config)
     data = FISData(config=conf)
     data.load_data()
@@ -26,7 +26,7 @@ def train(test_config):
     data = create_data()
     data.shuffle_data()
     a = Config(config_dict=None, standard_key_list=DenseModel.standard_key_list)
-    a.load_config(path=CONFIG_PATH + '/testDenseAttackConfig.json')
+    a.load_config(path=CONFIG_PATH + '/testDenseTaskConfig.json')
     model = DenseModel(config=a)
     # data_generator = tl.iterate.minibatches(inputs=np.array(data.state_list, dtype=np.float),
     #                                         targets=np.array(data.output_list, dtype=np.float),

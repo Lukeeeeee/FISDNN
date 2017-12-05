@@ -1,4 +1,6 @@
 {
   "STATE_DIM": 3,
-  "OUTPUT_DIM": 3
+  "OUTPUT_DIM": 3,
+  "STATE_NAME_LIST": ["UnconqueredIslands","StayingPower", "DetectedEnemies"],
+  "OUTPUT_NAME_LIST": ["CONQUER", "PROTECTION", "ATTACK"]
 }

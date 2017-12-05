@@ -22,9 +22,12 @@ class Config(object):
     def save_config(self, path):
         save_to_json(dict=self.config_dict, path=path)
 
-    def load_config(self, path):
-        res = load_json(file_path=path)
-        self.config_dict = res
+    def load_config(self, path, json_dict=None):
+        if json_dict is not None:
+            self.config_dict = json_dict
+        else:
+            res = load_json(file_path=path)
+            self.config_dict = res
 
     def check_config(self, dict, key_list):
         if check_dict_key(dict=dict, standard_key_list=key_list):

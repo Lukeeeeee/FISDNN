@@ -1,0 +1,7 @@
+{
+  "STATE_DIM": 2,
+  "OUTPUT_DIM": 2,
+  "FILE_PATH": "",
+  "STATE_NAME_LIST": ["DetectedEnemies","StayingPower"],
+  "OUTPUT_NAME_LIST": ["TRACK", "SEARCH"]
+}

@@ -1,0 +1,13 @@
+{
+  "LEARNING_RATE": 0.01,
+  "DECAY": 0.01,
+  "STATE": {
+    "STATE": [3]
+  },
+  "OUTPUT_DIM": 10,
+  "DENSE_LAYER_1_UNIT": 10,
+  "DENSE_LAYER_2_UNIT": 20,
+  "OUTPUT_LAYER": 3,
+  "DROP_OUT_PROB_VALUE": 0.5,
+  "L2": 0.01
+}

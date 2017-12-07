@@ -43,7 +43,7 @@ def load_json(file_path):
 
 def variable_summaries(var, name):
     """Attach a lot of summaries to a Tensor (for TensorBoard visualization)."""
-    with tf.name_scope(name + 'summaries'):
+    with tf.name_scope(name + '_summaries'):
         tf.summary.scalar('loss', var)
         mean = tf.reduce_mean(var)
         tf.summary.scalar('mean', mean)

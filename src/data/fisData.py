@@ -13,6 +13,7 @@ class FISData(Data):
         super().__init__(config)
         self.state_list = []
         self.output_list = []
+        self.sample_count = 0
 
     def load_data(self, *args, **kwargs):
         # super().load_data(*args, **kwargs)
@@ -28,7 +29,7 @@ class FISData(Data):
                 self.state_list.append(state_data_sample)
                 self.output_list.append(output_data_sample)
                 self.data_list.append({"STATE": state_data_sample, "OUTPUT": output_data_sample})
-        pass
+        self.sample_count = len(self.data_list)
 
     def shuffle_data(self):
         temp_data = np.array(self.data_list)

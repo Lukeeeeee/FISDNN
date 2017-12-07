@@ -1,0 +1,9 @@
+{
+  "LEARNING_RATE": 0.01,
+  "STATE": {
+    "STATE": [2]
+  },
+  "OUTPUT_DIM": 2,
+  "DENSE_LAYER_1_UNIT": 10,
+  "OUTPUT_LAYER": 2
+}
